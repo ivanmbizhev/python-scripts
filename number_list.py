@@ -1,14 +1,23 @@
+from more_itertools import more
+
+
+empty_list = []
 even = [2, 4, 6, 8]
 odd = [1, 3, 5, 7, 9]
 
-print(min(even))
-print(max(even))
-print(min(odd))
-print(max(odd))
+numbers = even + odd
+print(numbers)
 
-print()
-print(len(even))
-print(len(odd))
+sorted_number = sorted(numbers)
+print(sorted_number)
+print(numbers)
 
-print()
-print("mississippi".count("s"))
+digits = list("432985617")
+print(digits)
+
+#more numbers
+#more_numbers = numbers[:]
+more_numbers = numbers.copy()
+more_numbers = list(numbers)
+print(more_numbers)
+print(numbers == more_numbers)
