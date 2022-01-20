@@ -1,5 +1,12 @@
 import random
 
+def get_integer(prompt):
+    while True:
+        temp = input(prompt)
+        if temp.isnumeric():
+            return int(temp)
+
+
 highest = 10
 answer = random.randint(1, highest)
 print(answer) #TODO: Remove after
@@ -7,7 +14,7 @@ guess = 0 #Initialise to any number that doesn't answer
 print("Please guess the number between 1 and {}: ".format(highest))
 
 while guess != answer:
-    guess = int(input())
+    guess = get_integer(": ")
 
     if guess == 0:
         break    

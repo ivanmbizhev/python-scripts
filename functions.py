@@ -1,19 +1,23 @@
-from email import parser
-
-
 def multiply(x, y):
     result = x * y
     return result
 
+def is_palindrom(string):
+    # backwards = string[::-1]
+    # return backwards == string
+    return string[::-1].casefold() == string.casefold()
 
-answer = multiply(1, 2)
-print(answer)
+def palindrome_sentence(sentence):
+    string = ""
+    for char in sentence:
+        if char.isalnum():
+            string += char
+    print(string)
+    #return string[::-1].casefold() == string.casefold()
+    return is_palindrom(string)
 
-forty_two = multiply(6, 7)
-print(forty_two)
-
-print()
-
-for val in range(1, 5):
-    two_times = multiply(2, val)
-    print(two_times)
+word = input("Please enter a word check: ")
+if palindrome_sentence(word):
+    print("'{}' is a palindrom".format(word))
+else:
+    print("'{}' is not a palindrom".format(word))
