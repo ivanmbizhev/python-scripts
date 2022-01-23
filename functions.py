@@ -16,8 +16,11 @@ def palindrome_sentence(sentence):
     #return string[::-1].casefold() == string.casefold()
     return is_palindrom(string)
 
-word = input("Please enter a word check: ")
-if palindrome_sentence(word):
-    print("'{}' is a palindrom".format(word))
-else:
-    print("'{}' is not a palindrom".format(word))
+# word = input("Please enter a word check: ")
+# if palindrome_sentence(word):
+#     print("'{}' is a palindrom".format(word))
+# else:
+#     print("'{}' is not a palindrom".format(word))
+
+answer = multiply(18, 3)
+print(answer)
