@@ -33,4 +33,4 @@ def fibonacci(n: int) -> int:
 for i in range(36):
     print(i, fibonacci(i))
     
-p = palindrome_sentence()
+p = palindrome_sentence(242)
