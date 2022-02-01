@@ -7,11 +7,11 @@ echo "Current status: "
 echo ------------------------------------------
 git status
 echo ------------------------------------------
-echo "Please enter your file: "
-read  punkt
+printf "Please enter your file: "
+read  -r punkt
 
-echo "Please enter your commit: "
-read  commit
+printf "Please enter your commit: "
+read  -r commit
 
 
 git add $punkt && git commit -m "$commit"
