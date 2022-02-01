@@ -7,7 +7,7 @@ echo "Current status: "
 echo ------------------------------------------
 git status
 echo ------------------------------------------
-printf "Please enter your file: "
+printf "Please enter your file or press . for all : "
 read  -r punkt
 
 printf "Please enter your commit: "
