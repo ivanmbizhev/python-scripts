@@ -1,7 +1,12 @@
 #!/bin/bash
 
-echo "Please enter the file to add: "
+echo "Current status: "
+echo ------------------------------------------
+git status
+echo ------------------------------------------
+echo "Please enter your file: "
 read  punkt
+
 echo "Please enter your commit: "
 read  commit
 
