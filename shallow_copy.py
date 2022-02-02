@@ -1,26 +1,22 @@
-lion_list = ["scary", "big", "cat"]
-elephant_list = ["big", "grey", "wrinkled"]
-teddy_list = ["cuddly", "stuffed"]
+import copy
+
 animals = {
-    "lion": lion_list,
-    "elephant": elephant_list,
-    "teddy": teddy_list,
+    "lion": ["scary", "big", "cat"],
+    "elephant": ["big", "grey", "wrinkled"],
+    "teddy": ["cuddly", "stuffed"],
 }
+# Perform a shallow copy
+# things = animals.copy()
 
-# things = animals.copy() 
-things = {
-    "lion": lion_list,
-    "elephant": elephant_list,
-    "teddy": teddy_list,
-}
+# Perform a deep copy
+things = copy.deepcopy(animals) 
 
 print(things["teddy"])
-print(animals["teddy"])
+print(id(things["teddy"]), things["teddy"])
+print(id(animals["teddy"]), animals["teddy"])
 
-# things["teddy"].append("toy")
-teddy_list.append("toy")
-animals["teddy"].append("added via `animals`")
-things["teddy"].append("added via `things`")
+print()
+
+things["teddy"].append("toy")
 print(things["teddy"])
 print(animals["teddy"])
-print(teddy_list)
