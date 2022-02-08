@@ -1,7 +1,8 @@
 choice = "-"
 while choice != "0":
-    if choice in "12345":
-        print("Your choice {}".format(choice))
+    if choice in set("12345"):
+    #if choice in {"1", "2", "3", "4", "5"}:
+        print(f"Your choice {choice}")
     else:
         print("Please choose your opiton from the list below: ")
         print("1:\tLearn Python")

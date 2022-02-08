@@ -1,3 +1,7 @@
 # python-scripts
 
-This is the second repo, using the VS code IDE. Again Python scripts made by watching courses from Udemy
+This is my personal training repo, using the VS code IDE. 
+The python scripts written here are made using the course "This Python For Beginners Course Teaches You The Python Language Fast. Includes Python Online Training With Python 3"
+
+Reached Sets 
+
