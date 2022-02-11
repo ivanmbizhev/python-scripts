@@ -6,6 +6,10 @@ trial_patients = ["Denise", "Eddie", "Frank", "Georgia", "Kenny"]
 
 for patient in trial_patients:
     prescription = patients[patient]
-    prescription.discard(warfarin)
-    prescription.add(edoxaban)
+    try:
+        prescription.remove(warfarin)
+        prescription.add(edoxaban)
+    except KeyError:
+        print(f"Patient {patient} is not taking Warfarin. "
+              f"Please remove {patient} from trial.")
     print(patient, prescription)
