@@ -1,4 +1,3 @@
-import re
 import tkinter
 
 mainWindow = tkinter.Tk()
